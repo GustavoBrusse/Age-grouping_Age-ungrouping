@@ -1,0 +1,19 @@
+## IDADE QUINQUENAL ##
+data.8$ageclass<-NA
+data.8$ageclass[data.8$age>=0 & data.8$age<=4]<-1
+data.8$ageclass[data.8$age>=5 & data.8$age<=9]<-2
+data.8$ageclass[data.8$age>=10 & data.8$age<=14]<-3
+data.8$ageclass[data.8$age>=15 & data.8$age<=19]<-4
+data.8$ageclass[data.8$age>=20 & data.8$age<=24]<-5
+data.8$ageclass[data.8$age>=25 & data.8$age<=29]<-6
+data.8$ageclass[data.8$age>=30 & data.8$age<=34]<-7
+data.8$ageclass[data.8$age>=35 & data.8$age<=39]<-8
+data.8$ageclass[data.8$age>=40 & data.8$age<=44]<-9
+data.8$ageclass[data.8$age>=45 & data.8$age<=49]<-10
+data.8$ageclass[data.8$age>=50 & data.8$age<=54]<-11
+data.8$ageclass[data.8$age>=55 & data.8$age<=59]<-12
+data.8$ageclass[data.8$age>=60 & data.8$age<=64]<-13
+data.8$ageclass[data.8$age>=65 & data.8$age<=69]<-14
+data.8$ageclass[data.8$age>=70 & data.8$age<=74]<-15
+data.8$ageclass[data.8$age>=75 & data.8$age<=79]<-16
+data.8$ageclass[data.8$age>=80]<-17
