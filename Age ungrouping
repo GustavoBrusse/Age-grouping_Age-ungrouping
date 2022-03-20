@@ -1,0 +1,82 @@
+## Age ungrouping using DATSUS population data by sex
+library(ungroup)
+age<-seq(0,80,5)
+nlast <- 21
+
+# Ungrouping male population
+m2000 <- fitted(pclm(age, dados2000[,2], nlast))
+m2001 <- fitted(pclm(age, dados2001[,2], nlast))
+m2002 <- fitted(pclm(age, dados2002[,2], nlast))
+m2003 <- fitted(pclm(age, dados2003[,2], nlast))
+m2004 <- fitted(pclm(age, dados2004[,2], nlast))
+m2005 <- fitted(pclm(age, dados2005[,2], nlast))
+m2006 <- fitted(pclm(age, dados2006[,2], nlast))
+m2007 <- fitted(pclm(age, dados2007[,2], nlast))
+m2008 <- fitted(pclm(age, dados2008[,2], nlast))
+m2009 <- fitted(pclm(age, dados2009[,2], nlast))
+m2010 <- fitted(pclm(age, dados2010[,2], nlast))
+m2011 <- fitted(pclm(age, dados2011[,2], nlast))
+m2012 <- fitted(pclm(age, dados2012[,2], nlast))
+m2013 <- fitted(pclm(age, dados2013[,2], nlast))
+m2014 <- fitted(pclm(age, dados2014[,2], nlast))
+m2015 <- fitted(pclm(age, dados2015[,2], nlast))
+m2016 <- fitted(pclm(age, dados2016[,2], nlast))
+m2017 <- fitted(pclm(age, dados2017[,2], nlast))
+m2018 <- fitted(pclm(age, dados2018[,2], nlast))
+m2019 <- fitted(pclm(age, dados2019[,2], nlast))
+
+#Ungrouping female population
+age<-seq(0,80,5)
+nlast <- 21
+
+f2000 <- fitted(pclm(age, dados2000[,3], nlast))
+f2001 <- fitted(pclm(age, dados2001[,3], nlast))
+f2002 <- fitted(pclm(age, dados2002[,3], nlast))
+f2003 <- fitted(pclm(age, dados2003[,3], nlast))
+f2004 <- fitted(pclm(age, dados2004[,3], nlast))
+f2005 <- fitted(pclm(age, dados2005[,3], nlast))
+f2006 <- fitted(pclm(age, dados2006[,3], nlast))
+f2007 <- fitted(pclm(age, dados2007[,3], nlast))
+f2008 <- fitted(pclm(age, dados2008[,3], nlast))
+f2009 <- fitted(pclm(age, dados2009[,3], nlast))
+f2010 <- fitted(pclm(age, dados2010[,3], nlast))
+f2011 <- fitted(pclm(age, dados2011[,3], nlast))
+f2012 <- fitted(pclm(age, dados2012[,3], nlast))
+f2013 <- fitted(pclm(age, dados2013[,3], nlast))
+f2014 <- fitted(pclm(age, dados2014[,3], nlast))
+f2015 <- fitted(pclm(age, dados2015[,3], nlast))
+f2016 <- fitted(pclm(age, dados2016[,3], nlast))
+f2017 <- fitted(pclm(age, dados2017[,3], nlast))
+f2018 <- fitted(pclm(age, dados2018[,3], nlast))
+f2019 <- fitted(pclm(age, dados2019[,3], nlast))
+
+# Matrix male pop. 
+Mpop<-cbind(m2000,m2001,m2002,m2003,m2004,m2005,m2006,m2007,m2008,m2009,m2010,m2011,m2012,m2013,m2014,m2015,m2016,
+            m2017,m2018,m2019)
+
+# Matrix female pop. 
+Fpop<-cbind(f2000,f2001,f2002,f2003,f2004,f2005,f2006,f2007,f2008,f2009,f2010,f2011,f2012,f2013,f2014,f2015,f2016,
+            f2017,f2018,f2019)
+
+#plot male
+plot(Mpop[,1], type="l")
+lines(Mpop[,2], type="l")
+lines(Mpop[,3], type="l")
+lines(Mpop[,4], type="l")
+lines(Mpop[,5], type="l")
+lines(Mpop[,6], type="l")
+lines(Mpop[,7], type="l")
+lines(Mpop[,8], type="l")
+lines(Mpop[,9], type="l")
+lines(Mpop[,10], type="l")
+lines(Mpop[,11], type="l")
+lines(Mpop[,12], type="l")
+lines(Mpop[,13], type="l")
+lines(Mpop[,14], type="l")
+lines(Mpop[,15], type="l")
+lines(Mpop[,16], type="l")
+lines(Mpop[,17], type="l")
+lines(Mpop[,18], type="l")
+lines(Mpop[,19], type="l")
+lines(Mpop[,20], type="l")
+
